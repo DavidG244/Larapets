@@ -196,7 +196,7 @@
             </div>
         </div>
         @endif
-        @if (Auth::user()->role == 'Customer')
+        @if (Auth::user()->role == 'customer')
         {{-- model users --}}
         <div class="flex flex-wrap gap-4 items-center justify-center">
             <div class="card text-white bg-[#000] w-96 shadow-sm">
