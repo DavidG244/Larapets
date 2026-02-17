@@ -1,0 +1,804 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Default module",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [],
+  "paths": {
+    "/api/pets/list": {
+      "get": {
+        "summary": "List Pets",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "example": {
+                  "message": "testing 😈",
+                  "pets": [
+                    {
+                      "id": 1,
+                      "name": "Firulaiss",
+                      "image": "1764713923.webp",
+                      "kind": "Dog",
+                      "weight": 7.6,
+                      "age": 2,
+                      "breed": "French Bulldog",
+                      "location": "Paris",
+                      "description": "Black dog, so charming, lovely",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:32:09.000000Z",
+                      "updated_at": "2025-12-02T22:26:12.000000Z"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Killer",
+                      "image": "1764713944.jpg",
+                      "kind": "Dog",
+                      "weight": 18,
+                      "age": 6,
+                      "breed": "Canne Corso",
+                      "location": "Millan",
+                      "description": "Explosive & , be carefully with it, Danger",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:32:09.000000Z",
+                      "updated_at": "2025-12-02T22:32:50.000000Z"
+                    },
+                    {
+                      "id": 3,
+                      "name": "Pistacho",
+                      "image": "1764714057.webp",
+                      "kind": "Cat",
+                      "weight": 5,
+                      "age": 1,
+                      "breed": "Mestizo",
+                      "location": "Manizales",
+                      "description": "Beatifull & , sweet",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:32:09.000000Z",
+                      "updated_at": "2025-12-02T22:32:56.000000Z"
+                    },
+                    {
+                      "id": 5,
+                      "name": "DarkViolet",
+                      "image": "no-image.png",
+                      "kind": "Parrot",
+                      "weight": 3.7,
+                      "age": 1,
+                      "breed": "Leannon",
+                      "location": "East Lorenzo",
+                      "description": "Sed dolorem exercitationem odio ea sunt inventore sapiente excepturi tempore saepe.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 6,
+                      "name": "Tomato",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 7,
+                      "age": 5,
+                      "breed": "Kunze",
+                      "location": "West Ravenshire",
+                      "description": "Illum id qui quasi dicta aut aperiam quaerat consequatur voluptas incidunt perferendis.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 7,
+                      "name": "DarkSeaGreen",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 1.5,
+                      "age": 0,
+                      "breed": "Waters",
+                      "location": "North Evalynburgh",
+                      "description": "Est nisi consequuntur illo consequatur impedit voluptas sequi tempore quas omnis.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 8,
+                      "name": "Crimson",
+                      "image": "1764714119.jpg",
+                      "kind": "Fish",
+                      "weight": 7.4,
+                      "age": 9,
+                      "breed": "Goldner",
+                      "location": "Candelariostad",
+                      "description": "Et molestias harum excepturi consequatur et.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-12-02T22:33:05.000000Z"
+                    },
+                    {
+                      "id": 9,
+                      "name": "MidnightBlue",
+                      "image": "no-image.png",
+                      "kind": "Cat",
+                      "weight": 9.7,
+                      "age": 5,
+                      "breed": "Littel",
+                      "location": "Kodyshire",
+                      "description": "Quaerat rerum modi occaecati quia odio aut.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 10,
+                      "name": "RosyBrown",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 2.7,
+                      "age": 4,
+                      "breed": "Schinner",
+                      "location": "Waelchibury",
+                      "description": "Sit non nobis eius architecto alias iste cumque enim animi.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 11,
+                      "name": "DarkGreen",
+                      "image": "no-image.png",
+                      "kind": "Dog",
+                      "weight": 7.4,
+                      "age": 9,
+                      "breed": "Johnson",
+                      "location": "North Selenabury",
+                      "description": "Ut et doloremque atque earum ut impedit nihil veniam.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 12,
+                      "name": "AntiqueWhite",
+                      "image": "no-image.png",
+                      "kind": "Pig",
+                      "weight": 0.5,
+                      "age": 4,
+                      "breed": "Romaguera",
+                      "location": "South Alvina",
+                      "description": "Aut vitae ut laboriosam earum aut est voluptatem dolor saepe officia.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 13,
+                      "name": "LightGoldenRodYellow",
+                      "image": "no-image.png",
+                      "kind": "Parrot",
+                      "weight": 1.4,
+                      "age": 1,
+                      "breed": "Nader",
+                      "location": "Arjunville",
+                      "description": "Non repudiandae culpa blanditiis fugiat saepe facere.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 14,
+                      "name": "DarkSlateGray",
+                      "image": "no-image.png",
+                      "kind": "Parrot",
+                      "weight": 8,
+                      "age": 1,
+                      "breed": "Funk",
+                      "location": "West Meaghanchester",
+                      "description": "Reprehenderit odit impedit quasi incidunt autem veniam perspiciatis suscipit voluptatem assumenda.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 15,
+                      "name": "GoldenRod",
+                      "image": "no-image.png",
+                      "kind": "Parrot",
+                      "weight": 4.9,
+                      "age": 2,
+                      "breed": "Thompson",
+                      "location": "Keshawnville",
+                      "description": "Consequatur qui et harum enim voluptas aperiam non optio consectetur.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 16,
+                      "name": "LightBlue",
+                      "image": "no-image.png",
+                      "kind": "Dog",
+                      "weight": 8.5,
+                      "age": 7,
+                      "breed": "Crooks",
+                      "location": "New Carson",
+                      "description": "Non pariatur sapiente nobis officia cumque harum sit expedita.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 17,
+                      "name": "SeaShell",
+                      "image": "no-image.png",
+                      "kind": "Cat",
+                      "weight": 1.2,
+                      "age": 6,
+                      "breed": "Spencer",
+                      "location": "New Keyshawn",
+                      "description": "Perspiciatis laboriosam quo qui at magnam.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 18,
+                      "name": "AliceBlue",
+                      "image": "no-image.png",
+                      "kind": "Dog",
+                      "weight": 4.6,
+                      "age": 3,
+                      "breed": "Jacobson",
+                      "location": "New Mistyside",
+                      "description": "Adipisci totam quos ipsam et quidem.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 19,
+                      "name": "ForestGreen",
+                      "image": "no-image.png",
+                      "kind": "Dog",
+                      "weight": 4.3,
+                      "age": 6,
+                      "breed": "Lehner",
+                      "location": "Maryview",
+                      "description": "Fugit fuga pariatur reprehenderit non expedita dignissimos autem illum.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 20,
+                      "name": "DodgerBlue",
+                      "image": "no-image.png",
+                      "kind": "Pig",
+                      "weight": 2.5,
+                      "age": 9,
+                      "breed": "Reilly",
+                      "location": "Andreanebury",
+                      "description": "Et molestiae quos minus sed ut rem omnis voluptate sit.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 21,
+                      "name": "LightSalmon",
+                      "image": "no-image.png",
+                      "kind": "Parrot",
+                      "weight": 6.9,
+                      "age": 3,
+                      "breed": "Kuhn",
+                      "location": "New Julio",
+                      "description": "Eveniet perferendis suscipit optio cum blanditiis ut.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 22,
+                      "name": "DarkMagenta",
+                      "image": "no-image.png",
+                      "kind": "Parrot",
+                      "weight": 4.1,
+                      "age": 9,
+                      "breed": "Ernser",
+                      "location": "Heidenreichstad",
+                      "description": "Asperiores natus aut repellendus suscipit vitae nobis doloribus temporibus.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 23,
+                      "name": "Gainsboro",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 2.5,
+                      "age": 0,
+                      "breed": "Zieme",
+                      "location": "North Christinaton",
+                      "description": "Voluptatum aut aut cumque et autem ipsum ducimus.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 24,
+                      "name": "LightPink",
+                      "image": "no-image.png",
+                      "kind": "Dog",
+                      "weight": 7.8,
+                      "age": 8,
+                      "breed": "Klein",
+                      "location": "Lake Abbyhaven",
+                      "description": "Qui voluptates tempore ea unde voluptatem ut sint dicta beatae quia.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 25,
+                      "name": "FloralWhite",
+                      "image": "no-image.png",
+                      "kind": "Pig",
+                      "weight": 5.9,
+                      "age": 9,
+                      "breed": "Bahringer",
+                      "location": "Andreaneberg",
+                      "description": "Nihil vel illo magnam deserunt quia voluptates non.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 26,
+                      "name": "SkyBlue",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 8.8,
+                      "age": 8,
+                      "breed": "Blanda",
+                      "location": "Laurieland",
+                      "description": "Quisquam et odit occaecati qui incidunt.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 27,
+                      "name": "RosyBrown",
+                      "image": "no-image.png",
+                      "kind": "Pig",
+                      "weight": 7.8,
+                      "age": 8,
+                      "breed": "Kozey",
+                      "location": "Granvilleport",
+                      "description": "Expedita molestias ipsam voluptatem in incidunt quidem nostrum.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 28,
+                      "name": "LightBlue",
+                      "image": "no-image.png",
+                      "kind": "Parrot",
+                      "weight": 7,
+                      "age": 1,
+                      "breed": "Daugherty",
+                      "location": "Port Rafael",
+                      "description": "Veniam aut maiores consequatur ut ut dolore non quas.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 29,
+                      "name": "MediumSeaGreen",
+                      "image": "no-image.png",
+                      "kind": "Parrot",
+                      "weight": 9.8,
+                      "age": 6,
+                      "breed": "Stehr",
+                      "location": "Rosieburgh",
+                      "description": "Ipsa consectetur ut rerum ullam et consequuntur odit autem.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 30,
+                      "name": "Chartreuse",
+                      "image": "no-image.png",
+                      "kind": "Bird",
+                      "weight": 5.2,
+                      "age": 7,
+                      "breed": "Reichert",
+                      "location": "West Barneyfurt",
+                      "description": "Iusto commodi a voluptatum nostrum vel qui assumenda unde illum repudiandae.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 31,
+                      "name": "LightSteelBlue",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 9.4,
+                      "age": 8,
+                      "breed": "White",
+                      "location": "Conroyside",
+                      "description": "Incidunt sint atque facere consectetur porro voluptas illo ullam.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 32,
+                      "name": "FloralWhite",
+                      "image": "no-image.png",
+                      "kind": "Bird",
+                      "weight": 6,
+                      "age": 9,
+                      "breed": "Bahringer",
+                      "location": "Assuntaville",
+                      "description": "Qui voluptatem est dolor quia in expedita asperiores.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 33,
+                      "name": "Purple",
+                      "image": "no-image.png",
+                      "kind": "Dog",
+                      "weight": 8.6,
+                      "age": 3,
+                      "breed": "Corwin",
+                      "location": "Fordville",
+                      "description": "Nulla voluptatem sapiente et vitae nihil quae delectus est.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 34,
+                      "name": "Violet",
+                      "image": "no-image.png",
+                      "kind": "Cat",
+                      "weight": 3.4,
+                      "age": 3,
+                      "breed": "Stracke",
+                      "location": "Gleasonview",
+                      "description": "Voluptatem sit consequatur eos dolor dolorem voluptatem placeat voluptate dolor.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 35,
+                      "name": "Blue",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 1.4,
+                      "age": 2,
+                      "breed": "Eichmann",
+                      "location": "East Keirahaven",
+                      "description": "Ea quisquam sequi tenetur incidunt quasi praesentium sit in eos.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 36,
+                      "name": "BlanchedAlmond",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 5.2,
+                      "age": 6,
+                      "breed": "Schmitt",
+                      "location": "Lake Shannonfort",
+                      "description": "Nulla at sed non nisi eos veniam.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 37,
+                      "name": "RosyBrown",
+                      "image": "no-image.png",
+                      "kind": "Pig",
+                      "weight": 1.1,
+                      "age": 9,
+                      "breed": "Monahan",
+                      "location": "East Parker",
+                      "description": "Alias rerum consequatur eius facere rerum et nihil fugit.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 38,
+                      "name": "LemonChiffon",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 1.9,
+                      "age": 9,
+                      "breed": "Labadie",
+                      "location": "Lake Glendaville",
+                      "description": "Facilis est tenetur enim voluptas dolorum.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-11-06T15:34:27.000000Z"
+                    },
+                    {
+                      "id": 39,
+                      "name": "DarkOrchid",
+                      "image": "no-image.png",
+                      "kind": "Bird",
+                      "weight": 0.6,
+                      "age": 4,
+                      "breed": "Homenick",
+                      "location": "Otiliabury",
+                      "description": "Recusandae porro reiciendis architecto nobis quae repudiandae ratione est vitae hic sapiente.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-12-11T00:13:04.000000Z"
+                    },
+                    {
+                      "id": 40,
+                      "name": "FireBrick",
+                      "image": "no-image.png",
+                      "kind": "Fish",
+                      "weight": 1.5,
+                      "age": 0,
+                      "breed": "Torphy",
+                      "location": "Port Abbie",
+                      "description": "Qui repellendus laudantium molestiae nostrum et voluptatem et.",
+                      "active": 1,
+                      "status": 1,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-12-11T02:26:42.000000Z"
+                    },
+                    {
+                      "id": 43,
+                      "name": "Bisque",
+                      "image": "1764863873.jpg",
+                      "kind": "Parrot",
+                      "weight": 9.1,
+                      "age": 0,
+                      "breed": "Nitzsche",
+                      "location": "New Marieburgh",
+                      "description": "Est est aperiam ex dolores.",
+                      "active": 1,
+                      "status": 0,
+                      "created_at": "2025-11-06T15:34:27.000000Z",
+                      "updated_at": "2025-12-10T23:48:34.000000Z"
+                    },
+                    {
+                      "id": 47,
+                      "name": "prueba",
+                      "image": "1764865552.jpg",
+                      "kind": "Dog",
+                      "weight": 6,
+                      "age": 4,
+                      "breed": "Mestizo",
+                      "location": "Millan",
+                      "description": "hhh",
+                      "active": 1,
+                      "status": 1,
+                      "created_at": "2025-12-04T16:25:52.000000Z",
+                      "updated_at": "2025-12-10T23:48:16.000000Z"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/pets/show/1": {
+      "get": {
+        "summary": "Show Pets",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "example": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Not Found</title>\n\n        <style>\n            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\\:rounded-lg{border-radius:.5rem}.sm\\:block{display:block}.sm\\:items-center{align-items:center}.sm\\:justify-start{justify-content:flex-start}.sm\\:justify-between{justify-content:space-between}.sm\\:h-20{height:5rem}.sm\\:ml-0{margin-left:0}.sm\\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\\:pt-0{padding-top:0}.sm\\:text-left{text-align:left}.sm\\:text-right{text-align:right}}@media (min-width:768px){.md\\:border-t-0{border-top-width:0}.md\\:border-l{border-left-width:1px}.md\\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\\:text-gray-300 { --text-opacity: 1; color: #e2e8f0; color: rgba(226,232,240,var(--text-opacity)) }}\n        </style>\n\n        <style>\n            body {\n                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n            }\n        </style>\n    </head>\n    <body class=\"antialiased\">\n        <div class=\"relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0\" role=\"main\">\n            <div class=\"max-w-xl mx-auto sm:px-6 lg:px-8\">\n                <div class=\"flex items-center pt-8 sm:justify-start sm:pt-0\">\n                    <h1 class=\"px-4 text-lg dark:text-gray-300 text-gray-700 border-r border-gray-400 tracking-wider\">\n                        404                    </h1>\n\n                    <div class=\"ml-4 text-lg dark:text-gray-300 text-gray-700 uppercase tracking-wider\">\n                        Not Found                    </div>\n                </div>\n            </div>\n        </div>\n    </body>\n</html>\n"
+              }
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/pets/store": {
+      "post": {
+        "summary": "Add Pet",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              },
+              "example": {
+                "name": "chariazrnmond",
+                "kind": "dragonwe",
+                "weight": 1000.1,
+                "age": "123",
+                "breed": "fly",
+                "location": "cali",
+                "description": "lorem"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "example": ""
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/pets/delete/48": {
+      "delete": {
+        "summary": "Delet Pets",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/pets/edit/1": {
+      "put": {
+        "summary": "Edit Pets",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              },
+              "example": {
+                "id": 1,
+                "name": "Firulaisssss",
+                "image": "1764713923.webp",
+                "kind": "Dogg",
+                "weight": 7.6,
+                "age": 2,
+                "breed": "French Bulldog",
+                "location": "Paris",
+                "description": "Black dog, so charming, lovely",
+                "active": 1,
+                "status": 0,
+                "created_at": "2025-11-06T15:32:09.000000Z",
+                "updated_at": "2025-12-02T22:26:12.000000Z"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "responses": {},
+    "securitySchemes": {}
+  },
+  "servers": [],
+  "security": []
+}
