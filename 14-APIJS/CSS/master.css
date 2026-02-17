@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(226, 147, 147, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(226, 147, 147, 0);
+    }
+}
+
+body {
+    font-family: jua, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: rgb(11, 219, 185);
+    overflow: hidden;
+    main{
+        background-color: rgb(224, 208, 208);
+        height: 490px;
+        width: 255px;
+        position: relative;
+        overflow: auto;
+        border-radius: 5px;
+        &#login {
+            background: url(../IMG/Group\ 5.png) no-repeat center;
+            background-size: cover;
+            form {
+                padding-top: 4rem;
+                bottom: 1rem;
+                gap: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        font-family: jua, sans-serif;
+                        width: 208px;
+                        height: 20px;
+                        border-radius: 5px;
+                        border: #E29393 1px solid;
+                    }
+                }
+                button {
+                    cursor: pointer;
+                    font-family: jua, sans-serif;
+                    font-size: 20px;
+                    color: black;
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #E29393;
+                    transition: all 0.3s ease;
+                }
+                button:hover {
+                    animation: buttonPulse 0.6s infinite;
+                    background-color: #d97a7a;
+                    box-shadow: 0 4px 12px rgba(226, 147, 147, 0.4);
+                }
+                button:active {
+                    transform: scale(0.98);
+                }
+            }
+        }
+        header {
+            background-color: #E29393;
+            border-radius: 5px 5px 0 0;
+            position: fixed;
+            display: flex;
+            width: 255px;
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &#dashboard {
+            background-size: cover;
+            form {
+                padding-top: 4rem;
+                bottom: 1rem;
+                gap: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        font-family: jua, sans-serif;
+                        width: 208px;
+                        height: 20px;
+                        border-radius: 5px;
+                        border: #E29393 1px solid;
+                    }
+                }
+                button {
+                    cursor: pointer;
+                    font-family: jua, sans-serif;
+                    font-size: 20px;
+                    color: black;
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #E29393;
+                    transition: all 0.3s ease;
+                }
+                button:hover {
+                    animation: buttonPulse 0.6s infinite;
+                    background-color: #d97a7a;
+                    box-shadow: 0 4px 12px rgba(226, 147, 147, 0.4);
+                }
+                button:active {
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+
+}

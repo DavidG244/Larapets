@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API JS: Larapets</title>
+    <link rel="stylesheet" href="CSS/master.css">
+</head>
+<body>
+    <!-- View: Login -->
+    <main id="login" hidden>
+        <header>
+            <img src="IMG/login.png" alt="login">
+        </header>
+        <form action="">
+            <label for="email">
+                Email:
+                <input type="email" name="email" placeholder="example@mail.com" required>
+            </label>
+            <label for="password">
+                Password:
+                <input type="password" name="password" placeholder="your secret password" required>
+            </label>
+            <button>login</button>
+        </form>
+    </main>
+
+    <!-- View: Dashboard -->
+    <main id="dashboard" >
+        <header hidden>
+            <img src="IMG/dasboard1.svg" alt="dashboard">
+        </header>
+        <button>add</button>
+        <button>Logout</button>
+    </main>
+    
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
