@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API JS: Larapets</title>
+    <link rel="stylesheet" href="css/master.css">
+
+</head>
+
+<body>
+    <!-- View: Login -->
+    <main id="login">
+        <header>
+            <img src="imgs/loginimg.png" alt="Login">
+        </header>
+        <form action="">
+            <label for="email">
+                Email:
+                <input type="email" name="email" placeholder="Bla Bla Bla">
+            </label>
+            <label for="password">
+                Password:
+                <input type="password" name="password" placeholder="Bla Bla Bla">
+            </label>
+            <button type="button">Login</button>
+        </form>
+    </main>
+    <!-- View: Dashboard -->
+    <main id="dashboard" class="hide">
+        <header>
+            <img src="imgs/title-dashboard.png" alt="Dashboard">
+        </header>
+        <nav>
+            <a href="" class="btnAdd">
+                <img src="imgs/btn-add.png" alt="Add">
+            </a>
+            <a href="" class="btnLogout">
+                <img src="imgs/btn-logout.png" alt="Logout">
+            </a>
+        </nav>
+        <h2>
+            Pet List
+        </h2>
+        <section class="list" class="hide">
+            <div class="row">
+                <img src="imgs/pett.png" alt="Pet1">
+                <div class="data">
+                    <h3>Firulais</h3>
+                    <h4>Dog: Nose</h4>
+                </div>
+                <nav class="actions">
+                    <a href="" class="show"></a>
+                    <a href="" class="edit"></a>
+                    <a href="" class="delete"></a>
+                </nav>
+            </div>
+        </section>
+        <section class="list">
+            <div class="row">
+                <img src="imgs/pett.png" alt="Pet1">
+                <div class="data">
+                    <h3>Firulais</h3>
+                    <h4>Dog: Nose</h4>
+                </div>
+                <nav class="actions">
+                    <a href="" class="show"></a>
+                    <a href="" class="edit"></a>
+                    <a href="" class="delete"></a>
+                </nav>
+            </div>
+        </section>
+        <section class="list">
+            <div class="row">
+                <img src="imgs/pett.png" alt="Pet1">
+                <div class="data">
+                    <h3>Firulais</h3>
+                    <h4>Dog: Nose</h4>
+                </div>
+                <nav class="actions">
+                    <a href="" class="show"></a>
+                    <a href="" class="edit"></a>
+                    <a href="" class="delete"></a>
+                </nav>
+            </div>
+        </section>
+        <section class="list" class="hide">
+            <div class="row">
+                <img src="imgs/pett.png" alt="Pet1">
+                <div class="data">
+                    <h3>Firulais</h3>
+                    <h4>Dog: Nose</h4>
+                </div>
+                <nav class="actions">
+                    <a href="" class="show"></a>
+                    <a href="" class="edit"></a>
+                    <a href="" class="delete"></a>
+                </nav>
+            </div>
+        </section>
+        <section class="list">
+            <div class="row">
+                <img src="imgs/pett.png" alt="Pet1">
+                <div class="data">
+                    <h3>Firulais</h3>
+                    <h4>Dog: Nose</h4>
+                </div>
+                <nav class="actions">
+                    <a href="" class="show"></a>
+                    <a href="" class="edit"></a>
+                    <a href="" class="delete"></a>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <!-- View: Add -->
+    <main id="add" class="hide">
+        <header>
+            <a href="#" class="btnBack"><img src="imgs/back.png" alt="Back"></a>
+            <img src="imgs/title-add.png" alt="Add">
+        </header>
+        <form action="">
+            <label for="name">
+                Name:
+                <input type="text" name="name" placeholder="Bla Bla Bla">
+            </label>
+            <label for="kind">
+                Kind:
+                <input type="text" name="kind" placeholder="Bla Bla Bla">
+            </label>
+            <label for="weight">
+                Weight:
+                <input type="text" name="weight" placeholder="Bla Bla Bla">
+            </label>
+            <label for="age">
+                Age:
+                <input type="text" name="age" placeholder="Bla Bla Bla">
+            </label>
+            <label for="breed">
+                Breed:
+                <input type="text" name="breed" placeholder="Bla Bla Bla">
+            </label>
+            <label for="location">
+                Location:
+                <input type="text" name="location" placeholder="Bla Bla Bla">
+            </label>
+            <div class="form-actions">
+                <button type="button" class="addBtn">Add</button>
+                <button type="button" class="cancelBtn">Cancel</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- View: Show -->
+    <main id="show" class="hide">
+        <header>
+                <a href="#" class="btnBack"><img src="imgs/back.png" alt="Back"></a>
+                <img src="imgs/title-show.png" alt="Show">
+        </header>
+        <div class="show-image">
+            <img src="imgs/pett.png" alt="Pet Image">
+        </div>
+        <div class="info-card">
+            <div class="row">
+                <div class="label">Name:</div>
+                <div class="value name">Firulais</div>
+            </div>
+            <div class="row">
+                <div class="label">Kind:</div>
+                <div class="value kind">Dog</div>
+            </div>
+            <div class="row">
+                <div class="label">Weight:</div>
+                <div class="value weight">24 lbs</div>
+            </div>
+            <div class="row">
+                <div class="label">Age:</div>
+                <div class="value age">7 years</div>
+            </div>
+            <div class="row">
+                <div class="label">Breed:</div>
+                <div class="value breed">Nose</div>
+            </div>
+            <div class="row">
+                <div class="label">Location:</div>
+                <div class="value location">Manizales</div>
+            </div>
+            <div class="row">
+                <div class="label">Description:</div>
+                <div class="value description">Bla Bla Bla</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- View: Edit -->
+    <main id="edit" class="hide">
+        <header>
+                <a href="#" class="btnBack"><img src="imgs/back.png" alt="Back"></a>
+                <img src="imgs/title-edit.png" alt="Edit">
+        </header>
+        <form action="">
+            <label for="ename">
+                Name:
+                <input type="text" name="name" class="e-name" placeholder="Firulais">
+            </label>
+            <label for="ekind">
+                Kind:
+                <input type="text" name="kind" class="e-kind" placeholder="Dog">
+            </label>
+            <label for="eweight">
+                Weight:
+                <input type="text" name="weight" class="e-weight" placeholder="24 lbs">
+            </label>
+            <label for="eage">
+                Age:
+                <input type="text" name="age" class="e-age" placeholder="7 years">
+            </label>
+            <label for="ebreed">
+                Breed:
+                <input type="text" name="breed" class="e-breed" placeholder="Nose">
+            </label>
+            <label for="elocation">
+                Location:
+                <input type="text" name="location" class="e-location" placeholder="Manizales">
+            </label>
+            <label for="edesc">
+                Description:
+                <textarea name="description" class="e-description" rows="3" placeholder="Bla Bla Bla"></textarea>
+            </label>
+            <div class="form-actions">
+                <button type="button" class="saveBtn">Edit</button>
+                <button type="button" class="cancelBtn e-cancel">Cancel</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/layout.js"></script>
+</body>
+
+</html>

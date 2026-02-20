@@ -19,7 +19,7 @@ class AuthController extends Controller
         $user = User::where('email', $data['email'])->first();
 
         if (!$user || !Hash::check($data['password'], $user->password)) {
-            return response()->json(['message' => 'Credentials invalid'], 401);
+            return response()->json(['message' => 'Invalid credentials'], 401);
         }
 
         $token = $user->generateApiToken();
